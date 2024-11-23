@@ -1,0 +1,56 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana;
+    background-color: rgb(117, 72, 20);
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+img{
+    border: 3px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 18px;
+    width: 40%;
+    margin: auto;
+    display: block;
+    
+}
+button{
+    color: black;
+    background-origin: padding-box;
+    border-color: black;
+    border-radius: 35%;
+    background-color: rgb(16, 46, 82);
+}
+iframe{
+    margin: auto;
+    display: block;
+    border: 3px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 18px;
+    width: 40%;
+}
+/*classe*/
+.main {
+	display: grid;
+	grid:auto auto / auto auto auto auto;
+	grid-gap:10px;
+	background-color:black;
+	padding: 10px;
+}
+
+.num {
+	background-color: grey;
+	text-align: center;
+	color: white;
+	padding: 10px 10px;
+	font-size: 30px;
+}

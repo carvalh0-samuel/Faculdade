@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Carros</title>
+    <!--Colocar CSS Externo-->
+    <link rel="stylesheet" href="D:\ALUNO\HTML_Samuel\CSS\carros.css">
+    
+    <script>
+        function minhaFuncao() {
+          alert("Bem vindo ao Site!");
+        }
+    </script>
+  
+      <!--Calcular o Delta-->
+  
+    <script>
+  
+        function calcularDelta() {
+          var a = document.getElementById("a").value;
+          var b = document.getElementById("b").value;
+          var c = document.getElementById("c").value;
+          resultadoHTML =  "";
+          resultadoHTML += "&Delta; = " + b + "<sup>2</sup> - 4 * " + a + " * " + c + '<br>';
+          resultadoHTML += "&Delta; = " + b * b + " - 4 * " + a + " * " + c + '<br>';
+          resultadoHTML += "&Delta; = " + b * b + " - " + 4 * a + " * " + c + '<br>';
+          resultadoHTML += "&Delta; = " + b * b + " - " + 4 * a * c + '<br>';
+          resultadoHTML += "&Delta; = " + parseInt(b * b - 4 * a * c) + '<br>';
+          document.getElementById("resultadoDelta").innerHTML = resultadoHTML;
+        }
+    </script>
+
+    <!--Calcule a Media de 3 numeros-->
+    <script>
+        var nota01 = parseInt(prompt("Informe o primeiro numero", "0"));
+        var nota02 = parseInt(prompt("Informe o segundo numero", "0"));
+        var nota03 = parseInt(prompt("Informe o terceiro numero", "0"));
+        alert("A média dos números informados é:" + (nota01+nota02+nota03)/3);
+    </script>
+
+    <!--Calcular o IMC do usuario-->
+    <script>
+        function calcularIMC() {
+            var altura = document.getElementById("altura").value;
+            var peso = document.getElementById("peso").value;
+            altura/= 100;
+            var imc = (peso / (altura * altura)).toFixed(2);
+            document.getElementById("resultadoIMC").innerHTML ="IMC: <strong>" + imc + "</strong>";
+        }
+    </script>
+</head>
+
+<body >
+   <button onclick="minhaFuncao()"><font color="black">Clique aqui!</font></button>
+    <!--cria um botão-->
+    <a href='D:\ALUNO\HTML_Samuel\HTML/index.html'><button>Home</button></a>
+    <a href='D:\ALUNO\HTML_Samuel\HTML/contato.html'><button>Contato</button></a>
+    <h1>Carros Antigos</h1>
+    <p>Eu sou o Alfa e o Ômega, o <sup>Primeiro</sup> e o <sub>Último,</sub> o Princípio e o Fim.<br>Apocalipse 22:13<br></p>
+    <h2>Opala</h2>
+    <img src="D:\ALUNO\HTML_Samuel\IMG/opala.jpg">
+    <br><iframe width="560" height="315" src="https://www.youtube.com/embed/cR6TbleMJG0?si=_98aM7cTba3ZcbwN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><center>Veja a história do Opala<a href="https://pt.wikipedia.org/wiki/Chevrolet_Opala" target="_blank"> aqui</a></center>
+
+    <!--Usando a classe com div-->
+    <div class="main">
+        <div class="num">Um</div>
+        <div class="num">Dois</div>
+        <div class="num">Três</div>
+        <div class="num">Quatro</div>
+        <div class="num">Cinco</div>
+        <div class="num">Seis</div>
+        <div class="num">Sete</div>
+        <div class="num">Oito</div>
+        <div class="num">Nove</div>
+        <div class="num">Dez</div>
+        <div class="num">Onze</div>
+        <div class="num">Doze</div>
+    </div>
+
+    <br><br>	
+    <!--comando que será utilizado para criar formulario-->
+    <input type="checkbox">Checkbox</br> <!--criar chekbox-->
+
+    <input type="radio">radio</br>
+
+    <!--Criar lista-->
+    <ol>
+        <li>casa</li>
+        <li>carro</li>
+        <li>jardim</li>
+    </ol>
+
+    <br>
+
+    <ul>
+        <li>casa</li>
+        <li>carro</li>
+        <li>jardim</li>
+    </ul>
+    <br>
+
+    <br>
+
+    <!--Formulario-->
+    <!--Formulário com campos de entrada e um botão de envio-->
+
+    <form name="input"
+    action="html_form_action.asp"
+    method="get">
+
+    Digite o seu primeiro nome: 
+    <input type="text" name="FirstName"
+    value="Samuel" size="20">
+    <br>Digite o seu último nome: 
+    <input type="text" name="LastName"
+    value="Carvalho" size="20">
+    <br>
+    <input type="submit" value="Enviar">
+
+    </form> 
+    <br>
+    <!--Caixas de Seleção-->
+    <form>
+    <input type="checkbox" name="bike">
+    Eu tenho uma bicicleta
+    <br>
+    <input type="checkbox" name="car">
+    Eu tenho um carro
+
+    </form>
+
+    <br>
+    <!--O Atributo Ação do Formulário (Form's Action) e o Botão Enviar (Submit)-->
+    <form name="input" action="html_form_action.asp"
+    method="get">
+    Nome do Usuário:
+    <input type="text" name="user">
+    <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <!--Caixa drop down Simples-->
+    <form>
+    <select name="cars">
+    <option value="volvo">Volvo
+    <option value="saab">Saab
+    <option value="fiat">Fiat
+    <option value="audi">Audi
+    <option value="bmw">BMW
+    </select>
+    </form>
+
+    <br>
+    <!--Área de Texto-->
+    <textarea rows="10" cols="30">
+    O gato estava brincando no jardim.
+    </textarea>
+
+    <br><br>
+    <!--Criar Butão-->
+    <form>
+    <input type="button" value="Oi mundo!">
+    </form>
+    <br><br>
+
+    <!--Conjunto de campo em torno dos dados-->
+    <fieldset>
+    <legend>
+    Informações de saúde:
+    </legend>
+    <form>
+    Altura <input type="text" size="3">
+    Pêso <input type="text" size="3">
+    <br>
+    <!--Data de Nascimento-->
+    Data de nascimento: <input type="date" name="nascimento">
+    <br>
+    <!--Permitir seleção de arquivos-->
+    <input type="file" name="arquivos">
+    <br>
+    <!--Permitir seleção de arquivos multiplos-->
+    <input type="file" name="arquivos" multiple>
+    </form>
+    </fieldset>
+    <br><br>
+    
+    <!--Password-->
+    <form>
+    <input type="password" name="senha" placeholder="Digite sua Senha">
+    </form>
+
+    <!--Calculo do Delta-->
+    <h3>Calculo do Delta</h3>
+    <h3>&Delta; = b<sup>2</sup> - 4 . a . c</h3>
+        <label for="a">Valor de a: </label>
+        <input id="a" type="number" min="0" max="100"><br>
+        <label for="b">Valor de b: </label>
+        <input id="b" type="number" min="0" max="100"><br>
+        <label for="c">Valor de c: </label>
+        <input id="c" type="number" min="0" max="100"><br><br>
+        <button onclick="calcularDelta()">Calcular o &Delta;</button>
+        <p></p>
+        <div id="resultadoDelta"></div>
+
+    <!--potencia com Qualquer Base ou Expoente-->
+    <script>
+        document.write("Base 2" + '<br>');
+        document.write("Expoente: 3" + '<br>');
+        document.write("Resultado: " + (2*2*2));
+    </script>
+    
+    <!--Calculo IMC-->
+    <h2>Calculo do IMC</h2>
+    <label for="altura">Altura (cm): </label>
+    <input id="altura" type="number" min="0" max="250"><br>
+    <label for="peso">Peso (kg): </label>
+    <input id="peso" type="number" min="0" max="250"><br>
+    <button onclick="calcularIMC()">Calcular o IMC</button>
+    <div id="resultadoIMC"></div>
+    <div id="extra">
+    <pre>
+
+
+</body>
+
+</html>
