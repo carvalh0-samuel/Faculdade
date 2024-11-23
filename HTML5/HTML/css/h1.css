@@ -1,0 +1,15 @@
+h1{
+    color: black;
+    text-align: center;
+
+}
+button{
+    color: black;
+    background-origin: padding-box;
+    border-color: black;
+    border-radius: 0%;
+    background-color: rgb(25, 71, 122);
+}
+html{
+    scroll-behavior: smooth;
+}
