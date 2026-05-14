@@ -1,2 +1,2 @@
-# Joguinhos-Oficina-Estacio
-Joguinhos simples feitos durante a palestra na semana acadêmica.
+Oficina-Estacio
+Joguinhos simples feitos durante a palestra de sexta da semana acadêmica.
